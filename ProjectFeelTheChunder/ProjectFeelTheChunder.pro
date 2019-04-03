@@ -26,33 +26,15 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
-    shape.cpp \
-    polygon.cpp \
-    line.cpp \
-    polyline.cpp \
-    rectangle.cpp \
-    ellipse.cpp \
-    text.cpp
+        mainwindow.cpp
 
 HEADERS += \
-        mainwindow.h \
-    shape.h \
-    polygon.h \
-    line.h \
-    polyline.h \
-    rectangle.h \
-    ellipse.h \
-    text.h
+        mainwindow.h
 
 FORMS += \
-        mainwindow.ui \
-    painter.ui
+        mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
-
-RESOURCES += \
-    bachgrounds.qrc
